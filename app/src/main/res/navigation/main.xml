@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/nav_chi">
+
+    <fragment
+        android:id="@+id/nav_chi"
+        android:name="com.example.money_management.fragment.ChiFragment"
+        android:label="@string/chi_name"
+        tools:layout="@layout/fragment_all" />
+    <fragment
+        android:id="@+id/nav_thu"
+        android:name="com.example.money_management.fragment.ThuFragment"
+        android:label="@string/thu_name"
+        tools:layout="@layout/fragment_all" />
+    <fragment
+        android:id="@+id/nav_thongke"
+        android:name="com.example.money_management.fragment.ThongKeFragment"
+        android:label="@string/thongke_name"
+        tools:layout="@layout/fragment_all" />
+    <fragment
+        android:id="@+id/nav_gioithieu"
+        android:name="com.example.money_management.fragment.GioiThieuFragment"
+        android:label="@string/chucnang_name"
+        tools:layout="@layout/fragment_gioi_thieu" />
+    <fragment
+        android:id="@+id/nav_thoat"
+        android:name="com.example.money_management.fragment.ExitFragment"
+        android:label="@string/chucnang_name"
+        tools:layout="@layout/fragment_exit" />
+
+
+</navigation>

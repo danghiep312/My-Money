@@ -1,0 +1,18 @@
+<resources>
+    <string name="chucnang_name">Chức năng</string>
+    <string name="chucnang1_name">Giới thiệu</string>
+    <string name="app_name">Quản Lý Chi Tiêu</string>
+    <string name="chi_name">Khoản Chi</string>
+    <string name="thu_name">Khoản Thu</string>
+    <string name="thongke_name">Thống Kê</string>
+    <string name="gioithieu_name">Giới Thiệu</string>
+    <string name="thoat_name">Thoát</string>
+    <string name="my_name">This is your name</string>
+    <string name="email_name">YourName.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="loaichi_name">Loại Chi</string>
+    <string name="noidung_name">Nội Dung</string>
+    <string name="gioithieu_text">Xem phim anime online miễn phí chất lượng cao, anime vietsub tổng hợp, xem anime hay nhất, vietsub anime mới nhất, hãy cùng khám phá kho tàng về hoạt ...</string>
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="chucnang_name">Chức năng</string>
+    <string name="chucnang1_name">Giới thiệu</string>
+    <string name="app_name">Quản Lý Chi Tiêu</string>
+    <string name="chi_name">Khoản Chi</string>
+    <string name="thu_name">Khoản Thu</string>
+    <string name="thongke_name">Thống Kê</string>
+    <string name="gioithieu_name">Giới Thiệu</string>
+    <string name="thoat_name">Thoát</string>
+    <string name="my_name">Đinh Trọng Quang Đạo</string>
+    <string name="email_name">trong.quang.dao@gmail.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

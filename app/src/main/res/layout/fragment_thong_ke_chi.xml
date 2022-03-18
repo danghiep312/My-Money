@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/contest"
+    android:background="#3e3e3e"
+    tools:context=".fragment.ThongKeChiFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Từ:"
+                android:textSize="22dp"
+                android:layout_weight="1"
+                android:textColor="#D3d3d3"
+                android:textColorHint="#D3D3D3"/>
+            <EditText
+                android:id="@+id/txtNgayBDC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#D3d3d3"
+                android:textColorHint="#D3D3D3"
+                android:textSize="17dp"
+                android:hint="YYYY-MM-DD"/>
+            <TextView
+                android:id="@+id/ngayBDC"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:gravity="center"
+                android:text="Chọn ngày"
+                android:textColor="#D3D3D3"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đến:"
+                android:textSize="22dp"
+                android:layout_weight="1"
+                android:textColor="#D3d3d3"
+                android:textColorHint="#D3D3D3"/>
+            <EditText
+                android:id="@+id/txtNgayKTC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#D3d3d3"
+                android:textColorHint="#D3D3D3"
+                android:textSize="17dp"
+                android:hint="YYYY-MM-DD"/>
+            <TextView
+                android:id="@+id/ngayKTC"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:gravity="center"
+                android:text="Chọn ngày"
+                android:textColor="#D3D3D3"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnTinhC"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="Tính"
+            android:textColor="#D3D3D3"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textColor="#D3d3d3"
+            android:textColorHint="#D3D3D3"
+            android:layout_margin="16dp"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:text="TỔNG THỐNG KÊ"/>
+        <TextView
+            android:id="@+id/tongC"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textColor="#D3d3d3"
+            android:textColorHint="#D3D3D3"
+            android:layout_margin="16dp"
+            android:layout_gravity="center"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+</FrameLayout>

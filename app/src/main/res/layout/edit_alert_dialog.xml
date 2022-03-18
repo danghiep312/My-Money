@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/oneitem1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+    <Spinner
+        android:id="@+id/spn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:drawableRight="@drawable/ic_assignment"
+        android:layout_marginTop="8dp"
+        android:text="Nhập Loại"
+        android:textColorHint="@android:color/white"
+        android:textColor="#D3d3d3"/>
+    <EditText
+        android:id="@+id/edt_tien"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:drawableRight="@drawable/ic_money"
+        android:gravity="center|start"
+        android:hint="Nhập Tiền"
+        android:padding="8dp"
+        android:textColorHint="@android:color/white"
+        android:textColor="#D3d3d3"
+        android:textSize="18sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+    <TextView
+        android:id="@+id/edt_ngay"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Ngày (Dạng: YYYY-MM-DD)"
+        android:gravity="center|start"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:textColorHint="@android:color/white"
+        android:textColor="#D3d3d3"/>
+            <ImageView
+                android:id="@+id/btnDateE"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:src="@drawable/date"/>
+        </LinearLayout>
+    <EditText
+        android:id="@+id/edt_noiDung"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="4dp"
+        android:textColorHint="@android:color/white"
+        android:textColor="#D3d3d3"
+        android:hint="Nội Dung:"
+        android:gravity="center|start"
+        android:drawableRight="@drawable/ic_text"/>
+    </LinearLayout>
+
+</LinearLayout>
