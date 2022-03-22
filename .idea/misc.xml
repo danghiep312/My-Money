@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MoneyManagement/app/src/main/res/layout/activity_main.xml" value="0.2223731884057971" />
+        <entry key="..\:/MoneyManagement/app/src/main/res/layout/add_khoan_alertdialog.xml" value="0.2223731884057971" />
+        <entry key="..\:/MoneyManagement/app/src/main/res/layout/edit_alert_dialog.xml" value="0.25" />
+        <entry key="..\:/MoneyManagement/app/src/main/res/layout/fragment_gioi_thieu.xml" value="0.2223731884057971" />
+        <entry key="..\:/MoneyManagement/app/src/main/res/layout/fragment_khoan_chi.xml" value="0.2223731884057971" />
+        <entry key="..\:/MoneyManagement/app/src/main/res/layout/khoan_one_item.xml" value="0.2223731884057971" />
+        <entry key="..\:/MoneyManagement/app/src/main/res/layout/layout_navigation_header.xml" value="0.2223731884057971" />
+        <entry key="..\:/MoneyManagement/app/src/main/res/layout/loai_one_item.xml" value="0.2223731884057971" />
+        <entry key="..\:/MoneyManagement/app/src/main/res/layout/spinner_layout.xml" value="0.2223731884057971" />
+        <entry key="..\:/MoneyManagement/app/src/main/res/menu/menu.xml" value="0.25" />
+        <entry key="..\:/MoneyManagement/app/src/main/res/menu/navigation_menu.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>

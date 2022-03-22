@@ -75,3 +75,4 @@ public class KhoanDAO {
         return list;
     }
 }
+//singleline

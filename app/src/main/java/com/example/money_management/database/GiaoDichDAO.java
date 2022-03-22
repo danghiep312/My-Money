@@ -20,6 +20,8 @@ public class GiaoDichDAO {
 
     }
     public long insert(GiaoDich gd){
+        System.out.println("In insert func:");
+        System.out.println(gd.getMotaGD() + " " + gd.getTienGD());
         ContentValues values = new ContentValues();
         values.put("ngayGD", sdf.format(gd.getNgayGD()));
         values.put("motaGD", gd.getMotaGD());
@@ -39,6 +41,7 @@ public class GiaoDichDAO {
     public long delete(String maGD){
         return db.delete("GIAODICH", "maGD=?",new String[]{maGD});
     }
+
     public List<GiaoDich> getGD(String sql, String...a){
         List<GiaoDich> list = new ArrayList<GiaoDich>();
         Cursor c = db.rawQuery(sql,a);
@@ -47,12 +50,12 @@ public class GiaoDichDAO {
                 GiaoDich gd = new GiaoDich();
                 gd.setMaGD(c.getString(c.getColumnIndex("maGD")));
                 gd.setNgayGD(sdf.parse(c.getString(c.getColumnIndex("ngayGD"))));
-                gd.setMaGD(c.getString(c.getColumnIndex("motaGD")));
+                gd.setMotaGD(c.getString(c.getColumnIndex("motaGD")));
                 gd.setTienGD(Double.parseDouble(c.getString(c.getColumnIndex("tienGD"))));
                 gd.setMaKhoan(c.getString(c.getColumnIndex("maKhoan")));
                 list.add(gd);
             }catch (Exception e){
-
+                e.printStackTrace();
             }
         }
         return list;
@@ -134,3 +137,5 @@ public class GiaoDichDAO {
         return tong;
     }
 }
+
+//

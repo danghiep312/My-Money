@@ -25,6 +25,8 @@ public class ExitFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_exit, container, false);
+
+        // backstack
         System.exit(1);
         return view;
     }

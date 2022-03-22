@@ -45,6 +45,7 @@ public class KhoanChiFragment extends Fragment {
     GiaoDichDAO gdDAO;
     KhoanChiAdapter khoanChiAdapter;
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+
     public KhoanChiFragment() {
         // Required empty public constructor
     }
@@ -59,6 +60,7 @@ public class KhoanChiFragment extends Fragment {
         list = new ArrayList<>();
         gdDAO = new GiaoDichDAO(getActivity());
         list = gdDAO.getAllChi();
+
         khoanChiAdapter = new KhoanChiAdapter(list, getActivity());
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
@@ -77,7 +79,8 @@ public class KhoanChiFragment extends Fragment {
                 ImageView btnDate = view1.findViewById(R.id.btnDate);
                 EditText motaGD = view1.findViewById(R.id.edt_noiDungadd);
                 EditText tienGD = view1.findViewById(R.id.edt_tienadd);
-                SpinnerAdapter spinnerAdapter = new SpinnerAdapter(getActivity(),new KhoanDAO(getActivity()).getLoaiKhoan("0"));
+
+                SpinnerAdapter spinnerAdapter = new SpinnerAdapter(getActivity(), new KhoanDAO(getActivity()).getLoaiKhoan("0"));
                 loaiGD.setAdapter(spinnerAdapter);
                 String date = GetDay();
                 ngayGD.setText(date);
@@ -91,9 +94,9 @@ public class KhoanChiFragment extends Fragment {
                         DatePickerDialog datePickerDialog = new DatePickerDialog(getActivity(), new DatePickerDialog.OnDateSetListener() {
                             @Override
                             public void onDateSet(DatePicker datePicker, int year, int month, int dayOfMonth) {
-                                if (month<9){
-                                    ngayGD.setText(year + "-" + "0" + (month+1) + "-" + dayOfMonth);
-                                }else {
+                                if (month < 9) {
+                                    ngayGD.setText(year + "-" + "0" + (month + 1) + "-" + dayOfMonth);
+                                } else {
                                     ngayGD.setText(year + "-" + (month + 1) + "-" + dayOfMonth);
                                 }
                             }
@@ -110,25 +113,26 @@ public class KhoanChiFragment extends Fragment {
                             Double tienNew = Double.parseDouble(tienGD.getText().toString());
                             Date soNgay = sdf.parse(ngayGD.getText().toString());
                             String mota = motaGD.getText().toString();
-                                gdDAO.insert(new GiaoDich(soNgay, mota, tienNew, idLoai));
-                                Snackbar.make(view.findViewById(R.id.conss),"Thêm thành công!",2000).setActionTextColor(Color.RED).setAction("OK", new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View view) {
-                                    }
-                                }).show();
-                                khoanChiAdapter.addData(gdDAO.getAllChi());
-                                recyclerView.scrollToPosition(gdDAO.getAllChi().size() - 1);
-                                recyclerView.setAdapter(khoanChiAdapter);
-                        }catch (NumberFormatException e) {
-                            Snackbar.make(view.findViewById(R.id.conss),"Tiền nhập không hợp lệ!",2000).setActionTextColor(Color.RED).setAction("OK", new View.OnClickListener() {
+
+                            gdDAO.insert(new GiaoDich(soNgay, mota, tienNew, idLoai));
+                            Snackbar.make(view.findViewById(R.id.conss), "Thêm thành công!", 2000).setActionTextColor(Color.RED).setAction("OK", new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                }
+                            }).show();
+                            khoanChiAdapter.addData(gdDAO.getAllChi());
+                            recyclerView.scrollToPosition(gdDAO.getAllChi().size() - 1);
+                            recyclerView.setAdapter(khoanChiAdapter);
+                        } catch (NumberFormatException e) {
+                            Snackbar.make(view.findViewById(R.id.conss), "Tiền nhập không hợp lệ!", 2000).setActionTextColor(Color.RED).setAction("OK", new View.OnClickListener() {
                                 @Override
                                 public void onClick(View view) {
                                 }
                             }).show();
                         } catch (RuntimeException e) {
                             Toast.makeText(getActivity(), "Chưa có loại", Toast.LENGTH_SHORT).show();
-                        }catch (Exception ex){
-                            Snackbar.make(view.findViewById(R.id.conss),"Ngày không hợp lệ!",2000).setActionTextColor(Color.RED).setAction("OK", new View.OnClickListener() {
+                        } catch (Exception ex) {
+                            Snackbar.make(view.findViewById(R.id.conss), "Ngày không hợp lệ!", 2000).setActionTextColor(Color.RED).setAction("OK", new View.OnClickListener() {
                                 @Override
                                 public void onClick(View view) {
                                 }
@@ -143,7 +147,7 @@ public class KhoanChiFragment extends Fragment {
                     }
                 });
                 builder.setView(view1);
-                AlertDialog alertDialog=builder.create();
+                AlertDialog alertDialog = builder.create();
                 alertDialog.show();
             }
 
@@ -151,7 +155,8 @@ public class KhoanChiFragment extends Fragment {
 
         return view;
     }
-    private String GetDay(){
+
+    private String GetDay() {
         long time = System.currentTimeMillis();
         String day = sdf.format(time);
         return day;

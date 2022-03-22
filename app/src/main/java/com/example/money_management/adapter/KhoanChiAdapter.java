@@ -51,6 +51,7 @@ public class KhoanChiAdapter extends RecyclerView.Adapter<KhoanChiAdapter.ViewHo
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.ngayGD.setText(sdf.format(list.get(position).getNgayGD()));
         holder.motaGD.setText(list.get(position).getMotaGD());
+        //System.out.println((list.get(position).getMotaGD() + "1"));
         holder.tienGD.setText(String.valueOf(list.get(position).getTienGD()));
         List<Khoan> khoanList = new KhoanDAO(context).getLoaiKhoan("0");
         try {
@@ -96,6 +97,7 @@ public class KhoanChiAdapter extends RecyclerView.Adapter<KhoanChiAdapter.ViewHo
         tienGD.setText(String.valueOf(giaoDich.getTienGD()));
         ngayGD.setText(sdf.format(giaoDich.getNgayGD()));
         motaGD.setText(giaoDich.getMotaGD());
+
         List<Khoan> khoanList = new KhoanDAO(context).getLoaiKhoan("0");
         SpinnerAdapter spinnerAdapter = new SpinnerAdapter(context, khoanList);
         loaiGD.setAdapter(spinnerAdapter);
