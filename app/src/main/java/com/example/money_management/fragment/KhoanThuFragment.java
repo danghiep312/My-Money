@@ -75,7 +75,7 @@ public class KhoanThuFragment extends Fragment {
                 View view1 = layoutInflater.inflate(R.layout.add_khoan_alertdialog, null);
                 Spinner loaiGD = view1.findViewById(R.id.spnadd);
                 TextView ngayGD = view1.findViewById(R.id.edt_ngayadd);
-                EditText motaGD = view1.findViewById(R.id.edt_noiDungadd);
+                EditText motaGD = view1.findViewById(R.id.alertContent);
                 EditText tienGD = view1.findViewById(R.id.edt_tienadd);
                 ImageView btnDate = view1.findViewById(R.id.btnDate);
                 SpinnerAdapter spinnerAdapter = new SpinnerAdapter(getActivity(),new KhoanDAO(getActivity()).getLoaiKhoan("1"));

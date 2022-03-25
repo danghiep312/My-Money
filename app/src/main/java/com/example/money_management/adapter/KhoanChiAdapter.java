@@ -64,10 +64,7 @@ public class KhoanChiAdapter extends RecyclerView.Adapter<KhoanChiAdapter.ViewHo
         holder.delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                GiaoDich giaoDich = list.get(position);
-                gdDAO.delete(giaoDich.getMaGD());
-                list.remove(giaoDich);
-                notifyItemRemoved(position);
+                deleteProcess(position);
             }
         });
         holder.edit.setOnClickListener(new View.OnClickListener() {
@@ -84,6 +81,32 @@ public class KhoanChiAdapter extends RecyclerView.Adapter<KhoanChiAdapter.ViewHo
         return list.size();
     }
 
+    public void deleteProcess(int position) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        LayoutInflater layoutInflater = LayoutInflater.from(context);
+        View view = layoutInflater.inflate(R.layout.delete_alertdialog, null);
+        TextView content = view.findViewById(R.id.alertContent);
+
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                GiaoDich giaoDich = list.get(position);
+                gdDAO.delete(giaoDich.getMaGD());
+                list.remove(giaoDich);
+                notifyItemRemoved(position);
+            }
+        });
+
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+
+        builder.setView(view);
+        builder.show();
+    }
 
     public void showDialog(GiaoDich giaoDich) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);

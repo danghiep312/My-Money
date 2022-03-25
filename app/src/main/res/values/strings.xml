@@ -14,5 +14,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="loaichi_name">Loại Chi</string>
     <string name="noidung_name">Nội Dung</string>
-    <string name="gioithieu_text">Một đoạn text dành và ảnh dành cho quảng cáo</string>
+    <string name="gioithieu_text">CLB Lập Trình PTIT - Lập Trình từ trái tim</string>
+    <string name="delete_alert">Bạn có chắc chắn muốn xoá?</string>
 </resources>

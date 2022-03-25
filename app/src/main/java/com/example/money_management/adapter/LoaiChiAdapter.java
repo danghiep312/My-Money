@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.money_management.database.KhoanDAO;
 import com.example.money_management.R;
+import com.example.money_management.model.GiaoDich;
 import com.example.money_management.model.Khoan;
 
 import java.util.List;
@@ -41,10 +42,7 @@ public class LoaiChiAdapter extends RecyclerView.Adapter<LoaiChiAdapter.ViewHold
         holder.btnDeleteLoai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Khoan khoan = list.get(position);
-                khoanDAO.delete(khoan.getMaKhoan());
-                list.remove(khoan);
-                notifyItemRemoved(position);
+                deleteProcess(position);
             }
         });
         holder.btnEditLoai.setOnClickListener(new View.OnClickListener() {
@@ -54,6 +52,33 @@ public class LoaiChiAdapter extends RecyclerView.Adapter<LoaiChiAdapter.ViewHold
                 showDialog(khoan);
             }
         });
+    }
+
+    public void deleteProcess(int position) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        LayoutInflater layoutInflater = LayoutInflater.from(context);
+        View view = layoutInflater.inflate(R.layout.delete_alertdialog, null);
+        TextView content = view.findViewById(R.id.alertContent);
+
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Khoan khoan = list.get(position);
+                khoanDAO.delete(khoan.getMaKhoan());
+                list.remove(khoan);
+                notifyItemRemoved(position);
+            }
+        });
+
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+
+        builder.setView(view);
+        builder.show();
     }
 
 
@@ -88,6 +113,7 @@ public class LoaiChiAdapter extends RecyclerView.Adapter<LoaiChiAdapter.ViewHold
         builder.setView(view);
         builder.show();
     }
+
     public void addData(List<Khoan> list) {
         if (list != null) {
             this.list = list;

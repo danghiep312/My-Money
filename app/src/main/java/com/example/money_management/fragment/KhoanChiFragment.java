@@ -77,7 +77,7 @@ public class KhoanChiFragment extends Fragment {
                 Spinner loaiGD = view1.findViewById(R.id.spnadd);
                 TextView ngayGD = view1.findViewById(R.id.edt_ngayadd);
                 ImageView btnDate = view1.findViewById(R.id.btnDate);
-                EditText motaGD = view1.findViewById(R.id.edt_noiDungadd);
+                EditText motaGD = view1.findViewById(R.id.alertContent);
                 EditText tienGD = view1.findViewById(R.id.edt_tienadd);
 
                 SpinnerAdapter spinnerAdapter = new SpinnerAdapter(getActivity(), new KhoanDAO(getActivity()).getLoaiKhoan("0"));

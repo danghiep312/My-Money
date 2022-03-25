@@ -30,7 +30,8 @@
             android:gravity="center|start"
             android:hint="Nhập Tiền"
             android:padding="8dp"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:inputType="numberSigned"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -57,13 +58,14 @@
                 android:src="@drawable/date" />
         </LinearLayout>
         <EditText
-            android:id="@+id/edt_noiDungadd"
+            android:id="@+id/alertContent"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:padding="4dp"
             android:textColor="#D3d3d3"
             android:textColorHint="#D3D3D3"
             android:hint="Nội Dung:"
+            android:inputType="text"
             android:gravity="center|start"
             android:drawableRight="@drawable/ic_text"/>
     </LinearLayout>

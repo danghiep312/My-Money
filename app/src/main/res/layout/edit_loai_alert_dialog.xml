@@ -8,15 +8,17 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sửa loại"
             android:textColorHint="@android:color/white"
             android:textColor="#D3d3d3"
-            android:textSize="24dp"
+            android:textSize="24sp"
             android:textStyle="bold"
-            android:gravity="center"></TextView>
+            android:gravity="center" />
+
         <EditText
             android:id="@+id/edt_loai"
             android:layout_width="match_parent"
@@ -25,9 +27,10 @@
             android:drawableRight="@drawable/ic_edit1"
             android:gravity="center|start"
             android:hint="Nhập Loại:"
+            android:inputType="text"
             android:padding="8dp"
-            android:textColorHint="@android:color/white"
             android:textColor="#D3d3d3"
+            android:textColorHint="@android:color/white"
             android:textSize="18sp" />
     </LinearLayout>
 </LinearLayout>

@@ -60,6 +60,27 @@ public class KhoanThuAdapter extends RecyclerView.Adapter<KhoanThuAdapter.ViewHo
         holder.delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                deleteProcess(position);
+            }
+        });
+        holder.edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GiaoDich giaoDich=list.get(position);
+                showDialog(giaoDich);
+            }
+        });
+    }
+
+    public void deleteProcess(int position) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        LayoutInflater layoutInflater = LayoutInflater.from(context);
+        View view = layoutInflater.inflate(R.layout.delete_alertdialog, null);
+        TextView content = view.findViewById(R.id.alertContent);
+
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
                 try{
                     GiaoDich giaoDich = list.get(position);
                     gdDAO.delete(giaoDich.getMaGD());
@@ -70,13 +91,16 @@ public class KhoanThuAdapter extends RecyclerView.Adapter<KhoanThuAdapter.ViewHo
                 }
             }
         });
-        holder.edit.setOnClickListener(new View.OnClickListener() {
+
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                GiaoDich giaoDich=list.get(position);
-                showDialog(giaoDich);
+            public void onClick(DialogInterface dialogInterface, int i) {
+
             }
         });
+
+        builder.setView(view);
+        builder.show();
     }
 
     @Override

@@ -42,10 +42,7 @@ public class LoaiThuAdapter extends RecyclerView.Adapter<LoaiThuAdapter.ViewHold
         holder.btnDeleteLoai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Khoan khoan = list.get(position);
-                khoanDAO.delete(khoan.getMaKhoan());
-                list.remove(khoan);
-                notifyItemRemoved(position);
+                deleteProcess(position);
             }
         });
         holder.btnEditLoai.setOnClickListener(new View.OnClickListener() {
@@ -55,6 +52,33 @@ public class LoaiThuAdapter extends RecyclerView.Adapter<LoaiThuAdapter.ViewHold
                 showDialog(khoan);
             }
         });
+    }
+
+    public void deleteProcess(int position) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        LayoutInflater layoutInflater = LayoutInflater.from(context);
+        View view = layoutInflater.inflate(R.layout.delete_alertdialog, null);
+        TextView content = view.findViewById(R.id.alertContent);
+
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Khoan khoan = list.get(position);
+                khoanDAO.delete(khoan.getMaKhoan());
+                list.remove(khoan);
+                notifyItemRemoved(position);
+            }
+        });
+
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+
+        builder.setView(view);
+        builder.show();
     }
 
     @Override

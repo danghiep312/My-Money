@@ -5,9 +5,21 @@
       <map>
         <entry key="..\:/MoneyManagement/app/src/main/res/layout/activity_main.xml" value="0.2223731884057971" />
         <entry key="..\:/MoneyManagement/app/src/main/res/layout/add_khoan_alertdialog.xml" value="0.2223731884057971" />
+        <entry key="..\:/MoneyManagement/app/src/main/res/layout/add_loai_alertdialog.xml" value="0.23777173913043478" />
+        <entry key="..\:/MoneyManagement/app/src/main/res/layout/delete_alert_dialog.xml" value="0.25" />
+        <entry key="..\:/MoneyManagement/app/src/main/res/layout/delete_alertdialog.xml" value="0.25" />
         <entry key="..\:/MoneyManagement/app/src/main/res/layout/edit_alert_dialog.xml" value="0.25" />
+        <entry key="..\:/MoneyManagement/app/src/main/res/layout/edit_loai_alert_dialog.xml" value="0.23777173913043478" />
+        <entry key="..\:/MoneyManagement/app/src/main/res/layout/fragment_all.xml" value="0.23777173913043478" />
+        <entry key="..\:/MoneyManagement/app/src/main/res/layout/fragment_exit.xml" value="0.23777173913043478" />
         <entry key="..\:/MoneyManagement/app/src/main/res/layout/fragment_gioi_thieu.xml" value="0.2223731884057971" />
         <entry key="..\:/MoneyManagement/app/src/main/res/layout/fragment_khoan_chi.xml" value="0.2223731884057971" />
+        <entry key="..\:/MoneyManagement/app/src/main/res/layout/fragment_khoan_thu.xml" value="0.23777173913043478" />
+        <entry key="..\:/MoneyManagement/app/src/main/res/layout/fragment_loai_chi.xml" value="0.23777173913043478" />
+        <entry key="..\:/MoneyManagement/app/src/main/res/layout/fragment_loai_thu.xml" value="0.23777173913043478" />
+        <entry key="..\:/MoneyManagement/app/src/main/res/layout/fragment_show.xml" value="0.23777173913043478" />
+        <entry key="..\:/MoneyManagement/app/src/main/res/layout/fragment_thong_ke_chi.xml" value="0.23777173913043478" />
+        <entry key="..\:/MoneyManagement/app/src/main/res/layout/fragment_thong_ke_thu.xml" value="0.23777173913043478" />
         <entry key="..\:/MoneyManagement/app/src/main/res/layout/khoan_one_item.xml" value="0.2223731884057971" />
         <entry key="..\:/MoneyManagement/app/src/main/res/layout/layout_navigation_header.xml" value="0.2223731884057971" />
         <entry key="..\:/MoneyManagement/app/src/main/res/layout/loai_one_item.xml" value="0.2223731884057971" />
