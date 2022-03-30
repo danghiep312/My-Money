@@ -2,6 +2,7 @@ package com.example.money_management.fragment;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -93,6 +95,13 @@ public class LoaiThuFragment extends Fragment {
                 builder.setView(view1);
                 AlertDialog alertDialog=builder.create();
                 alertDialog.show();
+
+                Button nButton = alertDialog.getButton(DialogInterface.BUTTON_NEGATIVE);
+                nButton.setBackgroundColor(Color.WHITE);
+                nButton.setTextColor(Color.BLACK);
+                Button pButton = alertDialog.getButton(DialogInterface.BUTTON_POSITIVE);
+                pButton.setBackgroundColor(Color.WHITE);
+                pButton.setTextColor(Color.BLACK);
             }
 
         });

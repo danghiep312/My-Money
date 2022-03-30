@@ -4,9 +4,11 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -105,7 +107,15 @@ public class KhoanChiAdapter extends RecyclerView.Adapter<KhoanChiAdapter.ViewHo
         });
 
         builder.setView(view);
-        builder.show();
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+
+        Button nButton = alertDialog.getButton(DialogInterface.BUTTON_NEGATIVE);
+        nButton.setBackgroundColor(Color.WHITE);
+        nButton.setTextColor(Color.BLACK);
+        Button pButton = alertDialog.getButton(DialogInterface.BUTTON_POSITIVE);
+        pButton.setBackgroundColor(Color.WHITE);
+        pButton.setTextColor(Color.BLACK);
     }
 
     public void showDialog(GiaoDich giaoDich) {
@@ -172,7 +182,15 @@ public class KhoanChiAdapter extends RecyclerView.Adapter<KhoanChiAdapter.ViewHo
             }
         });
         builder.setView(view);
-        builder.show();
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+
+        Button nButton = alertDialog.getButton(DialogInterface.BUTTON_NEGATIVE);
+        nButton.setBackgroundColor(Color.WHITE);
+        nButton.setTextColor(Color.BLACK);
+        Button pButton = alertDialog.getButton(DialogInterface.BUTTON_POSITIVE);
+        pButton.setBackgroundColor(Color.WHITE);
+        pButton.setTextColor(Color.BLACK);
     }
 
     public void addData(List<GiaoDich> list) {

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    android:background="@drawable/oneitem"
+    android:background="@color/colorWhite"
     android:gravity="center"
     android:orientation="horizontal"
     android:padding="10dp">
@@ -18,9 +18,9 @@
         <ImageView
             android:id="@+id/ivAvtTruyen"
             android:layout_width="110dp"
-            android:src="@drawable/ic_money_bag"
             android:layout_height="150dp"
-            android:padding="20dp"/>
+            android:padding="20dp"
+            android:src="@drawable/ic_money_bag" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -47,6 +47,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
+
                     <TextView
                         android:id="@+id/txtTien"
                         android:layout_width="wrap_content"
@@ -55,6 +56,7 @@
                         android:text="Loại"
                         android:textColor="#dacb46"
                         android:textSize="12sp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -62,6 +64,7 @@
                         android:text="VNĐ / Ngày:"
                         android:textColor="#dacb46"
                         android:textSize="12sp" />
+
                     <TextView
                         android:id="@+id/txtNgay"
                         android:layout_width="wrap_content"

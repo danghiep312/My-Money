@@ -2,6 +2,7 @@ package com.example.money_management.fragment;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -19,6 +21,8 @@ import com.example.money_management.R;
 import com.example.money_management.adapter.LoaiChiAdapter;
 import com.example.money_management.model.Khoan;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -87,6 +91,13 @@ public class LoaiChiFragment extends Fragment {
                 builder.setView(view1);
                 AlertDialog alertDialog=builder.create();
                 alertDialog.show();
+
+                Button nButton = alertDialog.getButton(DialogInterface.BUTTON_NEGATIVE);
+                nButton.setBackgroundColor(Color.WHITE);
+                nButton.setTextColor(Color.BLACK);
+                Button pButton = alertDialog.getButton(DialogInterface.BUTTON_POSITIVE);
+                pButton.setBackgroundColor(Color.WHITE);
+                pButton.setTextColor(Color.BLACK);
             }
 
         });

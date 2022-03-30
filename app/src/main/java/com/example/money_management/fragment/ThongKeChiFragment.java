@@ -30,6 +30,7 @@ public class ThongKeChiFragment extends Fragment {
     EditText ngayBD, ngayKT;
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
     GiaoDichDAO gdDAO;
+
     public ThongKeChiFragment() {
         // Required empty public constructor
     }
@@ -56,14 +57,13 @@ public class ThongKeChiFragment extends Fragment {
                 DatePickerDialog datePickerDialog = new DatePickerDialog(getActivity(), new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker datePicker, int year, int month, int dayOfMonth) {
-                        if (month<9 && dayOfMonth<9){
-                            ngayBD.setText(year + "-" + "0" + (month+1) + "-" + "0" + dayOfMonth);
-                        }else if(dayOfMonth<9){
-                            ngayBD.setText(year + "-"  + (month+1) + "-" + "0" + dayOfMonth);
-                        }
-                        else if (month<9){
-                            ngayBD.setText(year + "-" + "0"  + (month+1) + "-" + dayOfMonth);
-                        }else {
+                        if (month < 9 && dayOfMonth < 9) {
+                            ngayBD.setText(year + "-" + "0" + (month + 1) + "-" + "0" + dayOfMonth);
+                        } else if (dayOfMonth < 9) {
+                            ngayBD.setText(year + "-" + (month + 1) + "-" + "0" + dayOfMonth);
+                        } else if (month < 9) {
+                            ngayBD.setText(year + "-" + "0" + (month + 1) + "-" + dayOfMonth);
+                        } else {
                             ngayBD.setText(year + "-" + (month + 1) + "-" + dayOfMonth);
                         }
                     }
@@ -81,14 +81,13 @@ public class ThongKeChiFragment extends Fragment {
                 DatePickerDialog datePickerDialog = new DatePickerDialog(getActivity(), new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker datePicker, int year, int month, int dayOfMonth) {
-                        if (month<9 && dayOfMonth<9){
-                            ngayKT.setText(year + "-" + "0" + (month+1) + "-" + "0" + dayOfMonth);
-                        }else if(dayOfMonth<9){
-                            ngayKT.setText(year + "-"  + (month+1) + "-" + "0" + dayOfMonth);
-                        }
-                        else if (month<9){
-                            ngayKT.setText(year + "-" + "0"  + (month+1) + "-" + dayOfMonth);
-                        }else {
+                        if (month < 9 && dayOfMonth < 9) {
+                            ngayKT.setText(year + "-" + "0" + (month + 1) + "-" + "0" + dayOfMonth);
+                        } else if (dayOfMonth < 9) {
+                            ngayKT.setText(year + "-" + (month + 1) + "-" + "0" + dayOfMonth);
+                        } else if (month < 9) {
+                            ngayKT.setText(year + "-" + "0" + (month + 1) + "-" + dayOfMonth);
+                        } else {
                             ngayKT.setText(year + "-" + (month + 1) + "-" + dayOfMonth);
                         }
                     }
@@ -102,10 +101,10 @@ public class ThongKeChiFragment extends Fragment {
                 try {
                     String batdau = ngayBD.getText().toString();
                     String ketthuc = ngayKT.getText().toString();
-                    ArrayList<Double> list = gdDAO.thongKeTongChi(batdau,ketthuc);
-                    tong.setText(String.valueOf(Sum(list))+"$");
+                    ArrayList<Double> list = gdDAO.thongKeTongChi(batdau, ketthuc);
+                    tong.setText(String.valueOf(Sum(list)) + "$");
                 } catch (Exception e) {
-                    Snackbar.make(view.findViewById(R.id.contkt),"Lổi định dạng ngày!!",2000).setActionTextColor(Color.RED).setAction("OK", new View.OnClickListener() {
+                    Snackbar.make(view.findViewById(R.id.contkt), "Lổi định dạng ngày!!", 2000).setActionTextColor(Color.RED).setAction("OK", new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
                         }
@@ -115,10 +114,11 @@ public class ThongKeChiFragment extends Fragment {
         });
         return view;
     }
-    private int Sum(ArrayList<Double> list){
+
+    private int Sum(ArrayList<Double> list) {
         int sum = 0;
-        for(double num: list){
-            sum+=num;
+        for (double num : list) {
+            sum += num;
         }
         return sum;
     }
