@@ -26,6 +26,7 @@ import com.example.money_management.R;
 import com.example.money_management.adapter.KhoanChiAdapter;
 import com.example.money_management.adapter.SpinnerAdapter;
 import com.example.money_management.model.GiaoDich;
+import com.example.money_management.model.Khoan;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -43,6 +44,7 @@ public class KhoanChiFragment extends Fragment {
     RecyclerView recyclerView;
     FloatingActionButton fb;
     GiaoDichDAO gdDAO;
+    KhoanDAO khoanDAO;
     KhoanChiAdapter khoanChiAdapter;
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
@@ -59,6 +61,7 @@ public class KhoanChiFragment extends Fragment {
         fb = view.findViewById(R.id.btnAddKhoanChi);
         list = new ArrayList<>();
         gdDAO = new GiaoDichDAO(getActivity());
+        khoanDAO = new KhoanDAO(getActivity());
         list = gdDAO.getAllChi();
 
         khoanChiAdapter = new KhoanChiAdapter(list, getActivity());
@@ -71,6 +74,10 @@ public class KhoanChiFragment extends Fragment {
         fb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View n) {
+                if (!haveType()) {
+                    Toast.makeText(getActivity(), "Chưa có loại", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
                 LayoutInflater layoutInflater = getActivity().getLayoutInflater();
                 View view1 = layoutInflater.inflate(R.layout.add_khoan_alertdialog, null);
@@ -160,5 +167,10 @@ public class KhoanChiFragment extends Fragment {
         long time = System.currentTimeMillis();
         String day = sdf.format(time);
         return day;
+    }
+
+    private boolean haveType() {
+        List<Khoan> list = khoanDAO.getLoaiKhoan("0");
+        return !list.isEmpty();
     }
 }

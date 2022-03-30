@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MoneyManagement/app/src/main/res/drawable/ic_money_bag.xml" value="0.121" />
         <entry key="..\:/MoneyManagement/app/src/main/res/layout/activity_main.xml" value="0.2223731884057971" />
         <entry key="..\:/MoneyManagement/app/src/main/res/layout/add_khoan_alertdialog.xml" value="0.2223731884057971" />
         <entry key="..\:/MoneyManagement/app/src/main/res/layout/add_loai_alertdialog.xml" value="0.23777173913043478" />

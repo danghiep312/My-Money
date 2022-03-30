@@ -13,7 +13,7 @@ import com.example.money_management.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ExitFragment extends Fragment {
+public class   ExitFragment extends Fragment {
 
     public ExitFragment() {
         // Required empty public constructor

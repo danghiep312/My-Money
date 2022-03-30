@@ -18,7 +18,7 @@
         <ImageView
             android:id="@+id/ivAvtTruyen"
             android:layout_width="110dp"
-            android:src="@drawable/money1"
+            android:src="@drawable/ic_money_bag"
             android:layout_height="150dp"
             android:padding="20dp"/>
 

@@ -136,6 +136,21 @@ public class GiaoDichDAO {
         }
         return tong;
     }
+
+    public boolean haveType(int type) {
+        String sql = "select * from GIAODICH";
+        List<GiaoDich> list;
+        if (type == 0) {
+            list = getAllChi();
+        }
+        else {
+            list = getAllThu();
+        }
+        if (list.isEmpty()) {
+            return false;
+        }
+        return true;
+    }
 }
 
 //
