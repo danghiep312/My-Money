@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="com.example.money_management.MainActivity"
-            android:label="Quản Lý Chi Tiêu">
+            android:label="My Money">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

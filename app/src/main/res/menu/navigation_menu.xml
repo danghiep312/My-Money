@@ -18,12 +18,14 @@
         </item>
         <item android:title="@string/chucnang1_name">
         <menu>
-    <item android:id="@+id/nav_gioithieu"
-        android:icon="@drawable/ask"
-        android:title="@string/gioithieu_name"/>
-    <item android:id="@+id/nav_thoat"
-        android:icon="@drawable/exit"
-        android:title="@string/thoat_name"/>
+            <item
+                android:id="@+id/nav_gioithieu"
+                android:icon="@drawable/ic_info"
+                android:title="@string/gioithieu_name" />
+            <item
+                android:id="@+id/nav_thoat"
+                android:icon="@drawable/ic_exit"
+                android:title="@string/thoat_name" />
         </menu>
         </item>
     </group>

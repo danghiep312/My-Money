@@ -1,18 +1,18 @@
 <resources>
     <string name="chucnang_name">Chức năng</string>
     <string name="chucnang1_name">Giới thiệu</string>
-    <string name="app_name">Quản Lý Chi Tiêu</string>
+    <string name="app_name">My Money</string>
     <string name="chi_name">Khoản Chi</string>
     <string name="thu_name">Khoản Thu</string>
     <string name="thongke_name">Thống Kê</string>
     <string name="gioithieu_name">Giới Thiệu</string>
     <string name="thoat_name">Thoát</string>
-    <string name="my_name">Luc</string>
+    <string name="my_name">Made By Đặng Hoàng Hiệp</string>
     <string name="email_name">YourName.com</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="loaichi_name">Loại Chi</string>
     <string name="noidung_name">Nội Dung</string>
-    <string name="gioithieu_text">1.Khái quát.\n- Câu lạc bộ được thành lập ngày 9/10/2011.\n- Tên đầy đủ là : Câu lạc bộ Lập trình PTIT\n(Tiếng Anh: Programming PTIT).\n- Tên viết tắt: PROPTIT.\n- Logo, slogan: LẬP TRÌNH PTIT lập trình từ trái tim.\n- Phương châm hoạt động: chia sẻ để cùng nhau phát triển.\n2.Sứ mệnh.\n- Là nơi giao lưu, đào tạo các môn lập trình và các môn học trong trường. Nâng cao phong trào học lập trình của sinh viên trong trường, góp phần vào để đưa lập trình là một thế mạnh của học viện.\n- Tạo điều kiện để sinh viên trong học viện có môi trường học tập năng động sáng tạo, và giúp đỡ sinh viên có thể đạt thành tích cao trong học tập.\n- Hội tụ các bạn đam mê lập trình vào nghiên cứu các đề tài, dự án.\n- Nâng cao các kĩ năng làm việc cần thiết cho sinh viên như : làm việc nhóm, kĩ năng thuyết trình, kĩ năng tổ chức sự kiện, kĩ năng quản lí nhân sự, dự án….</string>
+    <string name="gioithieu_text">CLB Lập Trình PTIT - Lập Trình từ trái tim\nLập trình PTIT....WE ARE ONE\n1. Khái quát.\n- Câu lạc bộ được thành lập ngày 9/10/2011.\n- Tên đầy đủ là : Câu lạc bộ Lập trình PTIT\n(Tiếng Anh: Programming PTIT).\n- Tên viết tắt: PROPTIT.\n- Logo, slogan: LẬP TRÌNH PTIT lập trình từ trái tim.\n- Phương châm hoạt động: chia sẻ để cùng nhau phát triển.\n2. Sứ mệnh.\n- Là nơi giao lưu, đào tạo các môn lập trình và các môn học trong trường. Nâng cao phong trào học lập trình của sinh viên trong trường, góp phần vào để đưa lập trình là một thế mạnh của học viện.\n- Tạo điều kiện để sinh viên trong học viện có môi trường học tập năng động sáng tạo, và giúp đỡ sinh viên có thể đạt thành tích cao trong học tập.\n- Hội tụ các bạn đam mê lập trình vào nghiên cứu các đề tài, dự án.\n- Nâng cao các kĩ năng làm việc cần thiết cho sinh viên như : làm việc nhóm, kĩ năng thuyết trình, kĩ năng tổ chức sự kiện, kĩ năng quản lí nhân sự, dự án….</string>
     <string name="delete_alert">Bạn có chắc chắn muốn xoá?</string>
 </resources>

@@ -27,8 +27,11 @@
         <entry key="..\:/MoneyManagement/app/src/main/res/layout/spinner_layout.xml" value="0.2223731884057971" />
         <entry key="..\:/MoneyManagement/app/src/main/res/menu/menu.xml" value="0.25" />
         <entry key="..\:/MoneyManagement/app/src/main/res/menu/navigation_menu.xml" value="0.25" />
+        <entry key="..\:/SourceCode/Java/MoneyManagement/app/src/main/res/drawable/ic__info.xml" value="0.161" />
+        <entry key="..\:/SourceCode/Java/MoneyManagement/app/src/main/res/drawable/ic_proptit.xml" value="0.1945" />
         <entry key="..\:/SourceCode/Java/MoneyManagement/app/src/main/res/drawable/oneitem.xml" value="0.1945" />
         <entry key="..\:/SourceCode/Java/MoneyManagement/app/src/main/res/drawable/oneitem1.xml" value="0.1945" />
+        <entry key="..\:/SourceCode/Java/MoneyManagement/app/src/main/res/layout/activity_main.xml" value="0.23777173913043478" />
         <entry key="..\:/SourceCode/Java/MoneyManagement/app/src/main/res/layout/add_khoan_alertdialog.xml" value="0.23777173913043478" />
         <entry key="..\:/SourceCode/Java/MoneyManagement/app/src/main/res/layout/add_loai_alertdialog.xml" value="0.23777173913043478" />
         <entry key="..\:/SourceCode/Java/MoneyManagement/app/src/main/res/layout/delete_alertdialog.xml" value="0.23777173913043478" />
@@ -45,8 +48,13 @@
         <entry key="..\:/SourceCode/Java/MoneyManagement/app/src/main/res/layout/fragment_thong_ke_chi.xml" value="0.23777173913043478" />
         <entry key="..\:/SourceCode/Java/MoneyManagement/app/src/main/res/layout/fragment_thong_ke_thu.xml" value="0.23777173913043478" />
         <entry key="..\:/SourceCode/Java/MoneyManagement/app/src/main/res/layout/khoan_one_item.xml" value="0.23777173913043478" />
+        <entry key="..\:/SourceCode/Java/MoneyManagement/app/src/main/res/layout/layout_navigation_header.xml" value="0.23777173913043478" />
         <entry key="..\:/SourceCode/Java/MoneyManagement/app/src/main/res/layout/loai_one_item.xml" value="0.23777173913043478" />
         <entry key="..\:/SourceCode/Java/MoneyManagement/app/src/main/res/layout/spinner_layout.xml" value="0.23777173913043478" />
+        <entry key="..\:/SourceCode/Java/MoneyManagement/app/src/main/res/menu/menu.xml" value="0.25" />
+        <entry key="..\:/SourceCode/Java/MoneyManagement/app/src/main/res/menu/navigation_menu.xml" value="0.25" />
+        <entry key="..\:/SourceCode/Java/MoneyManagement/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1945" />
+        <entry key="..\:/SourceCode/Java/MoneyManagement/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1945" />
       </map>
     </option>
   </component>
