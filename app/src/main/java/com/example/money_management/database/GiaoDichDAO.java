@@ -9,6 +9,7 @@ import com.example.money_management.model.GiaoDich;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class GiaoDichDAO {
@@ -58,7 +59,7 @@ public class GiaoDichDAO {
                 e.printStackTrace();
             }
         }
-        return list;
+        return sortByTime(list);
     }
     //get All
     public List<GiaoDich> getAll(){
@@ -150,6 +151,16 @@ public class GiaoDichDAO {
             return false;
         }
         return true;
+    }
+
+    private List<GiaoDich> sortByTime(List<GiaoDich> list) {
+        list.sort(new Comparator<GiaoDich>() {
+            @Override
+            public int compare(GiaoDich g1, GiaoDich g2) {
+                return g1.getNgayGD().compareTo(g2.getNgayGD());
+            }
+        });
+        return list;
     }
 }
 
